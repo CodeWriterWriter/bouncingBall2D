@@ -3,20 +3,18 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	y = 0.25*ofGetHeight();
-	x = 0.25f*ofGetWidth();
-	/*angle = rand() % 361;
+	y = 0.5*ofGetHeight();
+	x = 0.5f*ofGetWidth();
+ 	angle = rand() % 361;
 	angle = angle * PI / 180;
-	dy = 10 * cos(angle);
-	dx = 10 * sin(angle);*/
+	dy = 500 * cos(angle);
+	dx = 500 * sin(angle);
 
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 	float dt = ofGetLastFrameTime();
-	dy += 10.0f*dt;
-	dx += 10.0f*dt;
 	y += dt*dy;
 	x += dt*dx;
 	if (y + RADIUS > ofGetHeight()) {
