@@ -1,8 +1,16 @@
 #pragma once
 
 #include "ofMain.h"
-
+#define PI 3.14159265
 class ofApp : public ofBaseApp{
+
+	private:
+		const float RADIUS = 60.0f;
+		float x = 0;
+		float y = 0;
+		float dy = 0;
+		float dx = 0;
+		int angle = 0;
 
 	public:
 		void setup();
